@@ -7,13 +7,6 @@ import streamlit as st
 
 def CAS_Searcher(search_term):
     
-    sigma_aldrich = Sigma_Aldrich()
-    sigma_aldrich.search(search_term)
-    n = sigma_aldrich.get_results()
-    for i in n:
-        # print(i)
-        st.write(f"""  * {i}""")
-    
     fluorochem = Fluorochem()
     fluorochem.search(search_term)
     a = fluorochem.get_results()
@@ -27,6 +20,15 @@ def CAS_Searcher(search_term):
     for i in b:
         # print(i)
         st.write(f"""  * {i}""")
+    
+    sigma_aldrich = Sigma_Aldrich()
+    sigma_aldrich.search(search_term)
+    c = sigma_aldrich.get_results()
+    for i in c:
+        # print(i)
+        st.write(f"""  * {i}""")
+
+
 
 #search_term = "66728-98-1"
 #search_term = "497-23-4" # furanone test

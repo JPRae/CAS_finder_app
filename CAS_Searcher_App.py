@@ -41,5 +41,5 @@ with streamlit_analytics.track():
 #analytics code:
 components.html(
 """
-<a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img src="https://c.statcounter.com/12682478/0/74f5936b/1/" alt="Web Analytics" ></a>
+<a title="" href="https://statcounter.com/" target="_blank"><img src="https://c.statcounter.com/12682478/0/74f5936b/1/" alt="" ></a>
 """)
